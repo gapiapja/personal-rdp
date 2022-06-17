@@ -5,7 +5,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v Wallpaper /t REG_SZ /d D:\a\wallpaper.bat
 net user administrator @Gapiapja /add >nul
 net localgroup administrators freerdp /add >nul
-net user administrator /active:yes >nul
+net user freerdp /active:yes >nul
 net user installer /delete
 diskperf -Y >nul
 sc config Audiosrv start= auto >nul
